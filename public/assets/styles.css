@@ -1,0 +1,10 @@
+h1 {
+    font-family: Arial, Helvetica, Sans-serif;
+} 
+
+.blog-container {
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+
+}
