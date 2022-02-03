@@ -6,4 +6,10 @@ router.get("/new", (request, response) => {
 response.render("blogs/new")
 })
 
+
+// router.post("/", (request, response) => {
+// // response.render()
+// })
+
+
 module.exports = router

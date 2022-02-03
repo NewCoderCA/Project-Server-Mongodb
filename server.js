@@ -6,8 +6,8 @@ server.set("view engine", "ejs");
 
 server.use("/public", express.static("public"));
 
-
 server.use("/blogs", blogRouter)
+
 
 server.get("/", (request, response) => {
     const blogs = [{
@@ -27,6 +27,7 @@ server.get("/", (request, response) => {
     }]
     response.render("blogs/index", { blogs: blogs });
 });
+
 
 const PORT = 3000;
 server.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`))
