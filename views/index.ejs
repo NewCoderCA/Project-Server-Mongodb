@@ -10,6 +10,15 @@
 <body>
     <div class="blog-container">
     <h1>Blogs are here...</h1>
+    <a href="/blogs/new" class="button-success">New Blog</a>
     </div>
+
+    <% blogs.forEach(blog => { %>
+    <div class="blog-card">
+       <%= blog.title %>
+    </div>    
+    <% }) %>
 </body>
 </html>
+
+  

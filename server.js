@@ -14,6 +14,16 @@ server.get("/", (request, response) => {
         title: 'Test Blog',
         createdAt: Date.now(),
         description: 'Test description'
+    },
+    {
+        title: 'Test Blog2',
+        createdAt: Date.now(),
+        description: 'Test description2'
+    },
+      {
+        title: 'Test Blog3',
+        createdAt: Date.now(),
+        description: 'Test description3'
     }]
     response.render("index", { blogs: blogs });
 });
