@@ -1,11 +1,15 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const blogRouter = require("./routes/blogs");
 const server = express();
 
+mongoose.connect("mongobd://localhost/blogs", { 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true 
+});
+
 server.set("view engine", "ejs");
-
 server.use("/public", express.static("public"));
-
 server.use("/blogs", blogRouter)
 
 

@@ -19,16 +19,12 @@ h1 {
     margin: 30px;
 }
 
-.h2, h3 {
+.h2, h3{
     margin-bottom: 15px;
 }
 
 .blog-date {
     color: grey;
-}
-
-.blog-description {
-
 }
 
 .button-success {
@@ -39,7 +35,59 @@ h1 {
     border-radius: 10px;
     padding: 15px;
     margin: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-save {
+    display: block;
+    background: green;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
     max-width: 100px;
     text-align: center;
     text-decoration: none;
+}
+.button-cancel {
+    display: block;
+    background: grey;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    max-width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-cancel:hover {
+    background-color: rgb(179, 174, 174);
+    color: black;
+}
+
+.button-save:hover {
+    background-color: rgb(197, 241, 193);
+    color: black;
+}
+
+.form-newblog{
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 30px;
+    display: block;
+}
+
+.form-input {
+    display: block;
+    margin: 10px;
+    padding:10px;
+}
+
+.form-new-buttons {
+    display: flex;
 }
