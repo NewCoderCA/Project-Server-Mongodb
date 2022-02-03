@@ -3,17 +3,17 @@ const Blog = require("../routes/models/blog");
 const router = express.Router();
 
 router.get("/new", (request, response) => {
-response.render("blogs/new")
+response.render("blogs/new", { blog: new Blog() }) //Blank default blog
 })
 
 router.get("/:id", (request, response) => {
-    //Redirect user 
+     response.send(request.params.id) //Send blog.id
 })
 
 
 //Save new async await new blog posted with prefilled blog info
 router.post("/", async (request, response) => {
-    const blog = new Blog({
+    let blog = new Blog({
         title: request.body.title,
         description: request.body.description,
     })
