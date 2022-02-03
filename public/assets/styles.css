@@ -19,8 +19,16 @@ h1 {
     margin: 30px;
 }
 
+.h2, h3 {
+    margin-bottom: 15px;
+}
+
 .blog-date {
-    color: solid grey;
+    color: grey;
+}
+
+.blog-description {
+
 }
 
 .button-success {

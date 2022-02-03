@@ -12,20 +12,20 @@ server.use("/blogs", blogRouter)
 server.get("/", (request, response) => {
     const blogs = [{
         title: 'Test Blog',
-        createdAt: Date.now(),
+        createdAt: new Date(),
         description: 'Test description'
     },
     {
         title: 'Test Blog2',
-        createdAt: Date.now(),
+        createdAt: new Date(),
         description: 'Test description2'
     },
       {
         title: 'Test Blog3',
-        createdAt: Date.now(),
+        createdAt: new Date(),
         description: 'Test description3'
     }]
-    response.render("index", { blogs: blogs });
+    response.render("blogs/index", { blogs: blogs });
 });
 
 const PORT = 3000;

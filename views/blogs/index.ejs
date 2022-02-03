@@ -15,10 +15,18 @@
 
     <% blogs.forEach(blog => { %>
     <div class="blog-card">
-       <%= blog.title %>
+      
+    <h2 class="blog-title">
+        <%= blog.title %>
+    </h2>
+    <h3 class="blog-date">
+        <%= blog.createdAt.toLocaleDateString(('en-GB')) %>
+    </h3>
+    <div class="blog-description">
+       <%= blog.description %>
+    </div>
     </div>    
     <% }) %>
 </body>
 </html>
 
-  
