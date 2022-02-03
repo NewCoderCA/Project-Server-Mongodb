@@ -3,14 +3,14 @@ const mongoose = require("mongoose");
 const blogRouter = require("./routes/blogs");
 const server = express();
 
-mongoose.connect("mongobd://localhost/blogs", { 
+mongoose.connect("mongodb://localhost/blogs", { 
     useNewUrlParser: true, 
     useUnifiedTopology: true 
 });
 
 server.set("view engine", "ejs");
 server.use("/public", express.static("public"));
-server.use("/blogs", blogRouter)
+server.use(express.urlencoded({ extended: false }));
 
 
 server.get("/", (request, response) => {
@@ -32,6 +32,8 @@ server.get("/", (request, response) => {
     response.render("blogs/index", { blogs: blogs });
 });
 
+
+server.use("/blogs", blogRouter);
 
 const PORT = 3000;
 server.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`))
