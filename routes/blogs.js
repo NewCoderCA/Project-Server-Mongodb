@@ -6,8 +6,11 @@ router.get("/new", (request, response) => {
 response.render("blogs/new", { blog: new Blog() }) //Blank default blog
 })
 
-router.get("/:id", (request, response) => {
-     response.send(request.params.id) //Send blog.id
+router.get("/:id", async (request, response) => {
+    const blog = await Blog.findById(request.params.id)
+    //  response.send(request.params.id) //Send blog.id
+    if (blog == null) response.redirect("/");
+    response.render('blogs/show', { blog: blog })
 })
 
 

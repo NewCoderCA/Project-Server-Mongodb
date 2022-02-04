@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/styles.css" type="text/css">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="blog-container">
+      <h1>Show your new blog...</h1>
+      <div class="blog-card">
+      <h2><%= blog.title %></h2>
+      <div class="blog-date"><%= blog.createdAt.toLocaleDateString() %></div>
+        
+    <div class="form-new-buttons">
+        <a href="/"class="button-cancel" >All Blogs</a>
+        <a href="/blogs/edit/<%= blog.id %>"  class="button-edit" >Edit Blog</a>
+    </div>
+    </div>
+    </div>     
+</body>
+</html>
