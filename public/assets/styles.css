@@ -45,9 +45,8 @@ h1 {
     color: white;
     font-size: 18px;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-    max-width: 100px;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
 }
@@ -57,9 +56,8 @@ h1 {
     color: white;
     font-size: 18px;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-    max-width: 100px;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
 }
@@ -70,9 +68,8 @@ h1 {
     color: white;
     font-size: 18px;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-    max-width: 100px;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
 }
@@ -81,11 +78,22 @@ h1 {
     display: block;
     background: lightskyblue;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-    max-width: 100px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-delete {
+    display: block;
+    background: rgb(243, 83, 83);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
 }
@@ -110,6 +118,12 @@ h1 {
     color: black;
 }
 
+
+.button-delete:hover {
+    background-color: rgb(247, 184, 189);
+    color: black;
+}
+
 .form-newblog{
     border: 2px solid grey;
     border-radius: 10px;
@@ -126,4 +140,5 @@ h1 {
 
 .form-new-buttons {
     display: flex;
+    padding: 5px;
 }

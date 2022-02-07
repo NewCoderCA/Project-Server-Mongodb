@@ -25,11 +25,15 @@
     <div class="blog-description">
        <%= blog.description %>
     </div>
-    <div class="blog-readmore">
+    <!-- <div class="blog-readmore"> -->
+      <div class="form-new-buttons">
        <a href="blogs/<% blog.id %>" class="button-readmore">Read more...</a>
-    </div>
-
-    </div>    
+       <form action="/blogs/<%= blog.id %>?_method=DELETE" method="POST">
+        <button type="submit" class="button-delete">Delete</button>
+      </form>
+      </div>
+     </div>
+    <!-- </div>     -->
     <% }) %>
 </body>
 </html>
