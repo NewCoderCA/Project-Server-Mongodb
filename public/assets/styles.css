@@ -77,6 +77,19 @@ h1 {
     text-decoration: none;
 }
 
+.button-readmore {
+    display: block;
+    background: lightskyblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    max-width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
 .button-cancel:hover {
     background-color: rgb(179, 174, 174);
     color: black;
@@ -89,6 +102,11 @@ h1 {
 
 .button-edit:hover {
     background-color: rgb(197, 241, 193);
+    color: black;
+}
+
+.button-readmore:hover {
+    background-color: rgb(184, 218, 247);
     color: black;
 }
 

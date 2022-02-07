@@ -15,3 +15,6 @@
 ## Installing EJS-Lint (Spellchecker)
 - Install `npm install -g ejs-lint` so Linter/Syntax Checker can run through project
 - Run `ejslint .` to check for errors when `include()` methods are used in files
+
+## Installing action=method override to use DELETE as method within a form 
+- Install `npm i method-override`

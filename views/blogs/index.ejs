@@ -9,22 +9,26 @@
 </head>
 <body>
     <div class="blog-container">
-    <h1>All Blogs are here...</h1>
-    <a href="/blogs/new" class="button-success">New Blog</a>
+      <h1>All Imposter Blogs are here...</h1>
+      <a href="/blogs/new" class="button-success">New Blog</a>
     </div>
 
     <% blogs.forEach(blog => { %>
     <div class="blog-card">
       
-    <h2 class="blog-title">
+      <h2 class="blog-title">
         <%= blog.title %>
-    </h2>
-    <h3 class="blog-date">
+      </h2>
+      <h3 class="blog-date">
         <%= blog.createdAt.toLocaleDateString(('en-GB')) %>
-    </h3>
+      </h3>
     <div class="blog-description">
        <%= blog.description %>
     </div>
+    <div class="blog-readmore">
+       <a href="blogs/<% blog.id %>" class="button-readmore">Read more...</a>
+    </div>
+
     </div>    
     <% }) %>
 </body>

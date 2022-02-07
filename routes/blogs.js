@@ -28,4 +28,11 @@ router.post("/", async (request, response) => {
     }
 })
 
+
+//Delete route for library installed delete method override on action method delete button
+router.delete("/:id", async (request, response) => {
+    await Blog.findByIdAndDelete(request.params.id)
+    response.redirect("/");
+})
+
 module.exports = router
