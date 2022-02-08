@@ -15,7 +15,6 @@
 
     <% blogs.forEach(blog => { %>
     <div class="blog-card">
-      
       <h2 class="blog-title">
         <%= blog.title %>
       </h2>
@@ -23,10 +22,10 @@
         <%= blog.createdAt.toLocaleDateString(('en-GB')) %>
       </h3>
     <div class="blog-description">
-       <%= blog.description %>
+       <%= blog.description.substring(0, 50) %>
     </div>
       <div class="form-new-buttons">
-       <a href="blogs/<% blog.id %>" class="button-readmore">Read more...</a>
+       <a href="blogs/<%= blog.id %>" class="button-readmore">Read more...</a>
        <form action="/blogs/<%= blog.id %>?_method=DELETE" method="POST">
         <button type="submit" class="button-delete">Delete</button>
       </form>

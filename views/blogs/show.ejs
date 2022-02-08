@@ -13,8 +13,11 @@
       <div class="blog-card">
       <h2><%= blog.title %></h2>
       <div class="blog-date"><%= blog.createdAt.toLocaleDateString() %></div>
-        
-    <div class="form-new-buttons">
+      <div class="blog-description">
+        <%= blog.description %>
+     </div>
+
+      <div class="form-new-buttons">
         <a href="/"class="button-cancel" >All Blogs</a>
         <a href="/blogs/edit/<%= blog.id %>"  class="button-cancel" >Edit Blog</a>
     </div>
