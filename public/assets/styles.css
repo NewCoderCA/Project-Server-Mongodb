@@ -2,7 +2,6 @@
     font-family: Arial, Helvetica, Sans-serif;
 }
 
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -17,7 +16,7 @@ img {
 }
 
 .blog-container {
-    padding: 10px;
+    padding: 10px; 
 }
 
 .blog-card {
@@ -84,7 +83,7 @@ img {
 
 .button-readmore {
     display: block;
-    background: lightskyblue;
+    background: rgb(123, 200, 248);
     color: white;
     font-size: 18px;
     border-radius: 10px;
@@ -111,7 +110,7 @@ img {
     color: black;
 }
 
-.button-save:hover {
+.button-save:hover, .button-success:hover {
     background-color: rgb(197, 241, 193);
     color: black;
 }
@@ -126,7 +125,6 @@ img {
     color: black;
 }
 
-
 .button-delete:hover {
     background-color: rgb(247, 184, 189);
     color: black;
@@ -138,15 +136,18 @@ img {
     padding: 15px;
     margin: 30px;
     display: block;
+    width: 100%;
 }
 
 .form-input {
     display: block;
     margin: 10px;
     padding:10px;
+    width: 80%; padding: .5em 1em;
 }
 
 .form-new-buttons {
     display: flex;
     padding: 5px;
+    width: 100%;
 }

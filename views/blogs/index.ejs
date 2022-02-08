@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Blog app created using Server Node.js, Express and MongoDB">
+    <meta http-equiv="refresh" content="30">
+    <meta name="author" content="NewCoderca">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/assets/styles.css" type="text/css">
     <title>Blog</title>
 </head>
 <body>
- 
     <div class="blog-container">  
       <nav> <img src="/public/flagAfrica.png" alt="African flags in African continent">
         <h1>All Blogs are here...</h1>
@@ -16,7 +18,6 @@
       </nav>
       <a href="/blogs/new" class="button-success">New Blog</a>
     </div>
-
     <% blogs.forEach(blog => { %>
     <div class="blog-card">
       <h2 class="blog-title">
