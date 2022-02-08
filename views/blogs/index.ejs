@@ -16,21 +16,17 @@
         <h1>All Blogs are here...</h1>
         <img src="/public/flagAfrica.png" alt="African flags in African continent">
       </nav>
-      <a href="/blogs/new" class="button-success">New Blog</a>
+      <a href="/blogs/new" class="button-success" aria-label="new-blog">New Blog</a>
     </div>
+
     <% blogs.forEach(blog => { %>
     <div class="blog-card">
-      <h2 class="blog-title">
-        <%= blog.title %>
-      </h2>
-      <h3 class="blog-date">
-        <%= blog.createdAt.toLocaleDateString(('en-GB')) %>
-      </h3>
-    <div class="blog-description">
-       <%= blog.description.substring(0, 50) %>
-    </div>
-      <div class="form-new-buttons">
-       <a href="blogs/<%= blog.id %>" class="button-readmore">Read more...</a>
+      <h2 class="blog-title"><%= blog.title %></h2>
+      <h3 class="blog-date"><%= blog.createdAt.toLocaleDateString(('en-GB')) %></h3>
+    <div class="blog-description"><%= blog.description.substring(0, 50) %></div>
+      
+    <div class="form-new-buttons">
+       <a href="blogs/<%= blog.id %>" class="button-readmore" aria-label="read-more">Read more...</a>
        <form action="/blogs/<%= blog.id %>?_method=DELETE" method="POST">
         <button type="submit" class="button-delete">Delete</button>
       </form>
