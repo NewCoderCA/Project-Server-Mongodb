@@ -1,4 +1,4 @@
-# Project Server withh Node, Express and MongoDB Database :smiley: 
+# Project Server with Node, Express and MongoDB Database :smiley: 
 
 ## Initialise on GitHub
 - Create new repo in `Github` with `.gitignore` file 
