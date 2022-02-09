@@ -16,5 +16,12 @@
 - Install `npm install -g ejs-lint` so Linter/Syntax Checker can run through project
 - Run `ejslint .` to check for errors when `include()` methods are used in files
 
-## Installing action=method override to use DELETE as method within a form 
-- Install `npm i method-override`
+## Installing action=method override 
+- Install `npm i method-override` in order to use DELETE as method within form
+
+## Installing Cypress for E2E Testing 
+- Install `npm install cypress -D` or `npm install cypress --save-dev` to Install and save 
+- Open Cypress `./node_modul
+es/.bin/cypress open`
+- Run Cypress in terminal `npx cypress run`
+- Run Cypress in browers ` npm run cypress:open`
