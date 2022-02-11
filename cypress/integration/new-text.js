@@ -30,10 +30,30 @@ describe('Route path changed to new blog', () => {
     });
 
     it('should not change route path if form not completed', () => {
-        cy.contains('#title');
-        cy.contains('#description');
-        cy.get('input[type=text').should('have.value', '');
-        cy.get('.button-save').click();
+        // cy.contains('#title');
+        // cy.contains('#description');
+        cy.get('#title').should('not.exist');
+        cy.contains('#button-save').click();
         cy.url().should('include', '/blogs/new');
     })
 });
+
+
+
+
+
+  // PRACTICE TEMPLATE e2e/tests/index.test.js
+// it("should send http request with login payload when submit button clicked", () => {
+//   cy.server();
+//   cy.route("POST", "/submit").as("submit");
+//   cy.get('input#username').type("test");
+//   cy.get('input#password').type("123abc");
+//   cy.get('button[type="submit"]').click();
+// cy.wait("@submit").should("have.property", "status", 200);
+// cy.get("@submit").should((xhr) => {
+//     expect(xhr.request.body).to.deep.equal({ username: "test", password: "123abc" });
+//     expect(xhr.response.body).to.equal("submit success!");
+//   });
+// });
+// });
+//});
