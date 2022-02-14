@@ -22,7 +22,7 @@
     <div class="blog-card">
       <h2 class="blog-title"><%= blog.title %></h2>
       <h3 class="blog-date"><%= blog.createdAt.toLocaleDateString(('en-GB')) %></h3>
-    <div class="blog-description"><%= blog.description.substring(0, 50) %></div>
+    <div class="blog-description" id="blog-description-substring"><%= blog.description.substring(0, 50) %></div>
       
     <div class="form-new-buttons">
        <a href="blogs/<%= blog.id %>" class="button-readmore" id="read-more-button" aria-label="read-more">Read more...</a>

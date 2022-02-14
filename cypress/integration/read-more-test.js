@@ -21,6 +21,6 @@ describe('Read more in a specific blog', () => {
     });
 
     it('should display 50 characters or less when you no longer want to Read more', () => {
-        cy.get('.blog-description').its('length').should('be.gt', 51);
+         cy.get('.blog-description').its('length').should('be.lt', 50);
     });
 });
